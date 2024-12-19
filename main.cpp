@@ -80,4 +80,16 @@ void BookRoom() {
     cout<<"Booking added successfully!\n";
 }
 
+void readBookings() {
+    vector<Hotel> rooms =loadBookings();
+
+    if(rooms.empty()) {
+        cout<<"No Bookings found.\n";
+    }else{
+        cout<<"\n----Customers List----";
+        for(const auto& s:rooms) {
+            s.display();
+        }
+    }
+}
 
