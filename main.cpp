@@ -159,3 +159,15 @@ vector<Hotel> loadBookings() {
     }
     return rooms;
 }
+void saveBookings(const vector<Hotel>& rooms) {
+    ofstream  file(filename);
+    if (file.is_open()) {
+        for (const auto& h :rooms) {
+            file << h.ID << "\n";
+            file <<h.CustomerName<<"\n";
+            file<<h.BookingDate<<"\n";
+            file<<h.price<<"\n";
+        }
+        file.close();
+    }
+}
