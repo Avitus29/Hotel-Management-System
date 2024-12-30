@@ -12,7 +12,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a018ba40-8768-4907-a38d-f61b99627a84" name="Changes" comment="readBookings function implementation" />
+    <list default="true" id="a018ba40-8768-4907-a38d-f61b99627a84" name="Changes" comment="changes to the xml file">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,6 +100,7 @@
       <workItem from="1734631299887" duration="410000" />
       <workItem from="1735320465770" duration="221000" />
       <workItem from="1735320839772" duration="134000" />
+      <workItem from="1735542442463" duration="982000" />
     </task>
     <task id="LOCAL-00001" summary="Project Initialization">
       <option name="closed" value="true" />
@@ -130,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735320636204</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="changes to the xml file">
+      <option name="closed" value="true" />
+      <created>1735542638572</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1735542638572</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +164,7 @@
     <MESSAGE value=" BookRoom Function implementation" />
     <MESSAGE value="Update main.cpp" />
     <MESSAGE value="readBookings function implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="readBookings function implementation" />
+    <MESSAGE value="changes to the xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to the xml file" />
   </component>
 </project>

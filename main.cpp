@@ -15,7 +15,6 @@ struct Hotel {
              << "\n\n";
     }
 
-    bool &ID;
 };
 
 void BookRoom();
@@ -89,8 +88,8 @@ void readBookings() {
         cout<<"No Bookings found.\n";
     }else{
         cout<<"\n----Customers List----";
-        for(const auto& s:rooms) {
-            s.display();
+        for(const auto& h:rooms) {
+            h.display();
         }
     }
 }
@@ -128,7 +127,7 @@ void cancelBooking() {
     int ID;
     bool found =false;
 
-    cout<<"Enter Room ID to delete:";
+    cout<<"Enter Room ID to cancel:";
     cin>>ID;
 
     for (auto it =rooms.begin(); it !=rooms.end(); ++it) {
@@ -136,7 +135,7 @@ void cancelBooking() {
             found = true;
             rooms.erase(it);
             saveBookings(rooms);
-            cout<<"Rooms Deleted!..\n";
+            cout<<"Rooms booking cancelled!..\n";
             break;
         }
     }if (!found) {
@@ -148,7 +147,7 @@ vector<Hotel> loadBookings() {
     ifstream file(filename);
     if (file.is_open()) {
         Hotel h;
-        while(file>>h.ID) {
+        while(file>>h.RoomID) {
             file.ignore();
             getline(file, h.CustomerName);
             getline(file,h.BookingDate);
@@ -163,11 +162,13 @@ void saveBookings(const vector<Hotel>& rooms) {
     ofstream  file(filename);
     if (file.is_open()) {
         for (const auto& h :rooms) {
-            file << h.ID << "\n";
+            file << h.RoomID << "\n";
             file <<h.CustomerName<<"\n";
             file<<h.BookingDate<<"\n";
             file<<h.price<<"\n";
         }
         file.close();
+    }else {
+        cout<<"Error opening file for saving bookings.\n";
     }
 }
